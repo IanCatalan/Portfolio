@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body data-bs-theme="light">
+        <nav class="navbar navbar-expand-md border-bottom text-center fixed-top "> <!-- barra de navegación -->
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Ian.Dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#presentation" id="botonpresentacion">Presentation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#proyects" id="botonproyectos">Proyects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills" id="botonhabilidades">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" id="botoncontacto">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    <div class="container containerGeneral" id="presentation"> <!--Container general-->
+    <div class="container text-center containerPrincipal"> <!-- Container sección principal -->
+    <div class="row "> <!-- Seccion principal -->
+        <div class="col-sm-10 col-md-8 border customColorDeFondo"> <!-- Primera divisiónn-->
+            <div class="row d-flex align-items-center justify-content-start">
+                <div class="col col-2 col-md-1"> <!-- Icono-->
+                    <img src="assets/img/id-badge-solid.svg" alt="Placa" class="icono">
+                </div>
+                <div class="col-6 col-md-8 mb-4"> <!-- Acerca de mi -->
+                    <h5 class="mt-5 text-start ">About me</h5>
+                </div>
+                <div class="w-100 my-5"></div> <!-- Separación entre columnas -->
+                <div class="col-12 text-start"> <!-- Texto principal-->
+                    <h1 class="mt-3">Ian Catalán Leiva</h1>
+                    <p class="">I'm a full-stack developer with a strong background in science, currently blablabla</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10 col-md-1 "></div><!-- Separación vertical -->
+        <div class="col-sm-10 col-md-3 border customColorDeFondo d-flex align-items-center justify-content-evenly"> <!--Segunda división Sección botones -->
+            <div class="row">
+                <div class="col-6 col-md-12"> <!-- Titulo "Theme"-->
+                    <h3 class="mt-2">Theme</h3>
+                </div>
+                <div class="col-6 col-md-12 "> <!-- Botón dark/light-->
+                <input onclick="cambiarTema()" type="radio" class="btn-check" id="botonTema" autocomplete="off" name="opciones">
+                <label class="btn" for="botonTema">
+                <img src="assets/img/light_mode.svg" alt="" class="botonClaro" id="imagenBoton"></label>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container containerProyectos" id="proyects"> <!-- Container Sección Proyectos -->
+        <div class="row "> <!-- Sección proyectos -->
+            <div class="col-12 col-md-6 "> <!-- Proyecto 1 -->
+                <div class="card border-0">
+                    <div class="card-body text-center customColorDeFondo">
+                      <img src="assets/img/file-code-solid.svg" alt="FileCode" class="icono">
+                      <h5 class="card-title">Proyect</h5>
+                      <p class="card-text">Text RPG.</p>
+                      <a href="#" class="btn" target="_blank" ><img src="assets/img/dice-d20-solid.svg" class="card-img-bottom imagenProyecto" alt="Dice-20-sides"></a>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 "> <!-- Proyecto 2 -->
+                <div class="card border-0">
+                    <div class="card-body text-center customColorDeFondo">
+                      <img src="assets/img/file-code-solid.svg" alt="FileCode" class="icono align-self-center">
+                      <h5 class="card-title">Proyect</h5>
+                      <p class="card-text">Bank Simulator.</p>
+                      <a href="#" class="btn" target="_blank"><img src="assets/img/building-columns-solid.svg" class="card-img-bottom imagenProyecto" alt="..."></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container border containerSkills customColorDeFondo" id="skills"> <!-- Container Sección Skills -->
+        <div class="row d-flex align-items-center"> <!-- Sección Skills -->
+            <div class="col col-2 col-md-1"> <!-- Icono-->
+                <img src="assets/img/toolbox-solid.svg" alt="Caja-herramientas" class="icono">
+            </div>
+            <div class="col-6 col-md-8 mb-4"> <!-- Titulo -->
+                <h5 class="mt-5 text-start">MyTools</h5>
+            </div>
+            <div class="row text-end"> <!-- Gradilla iconosSkills -->
+                <div class="col-4 col-md-3"> <!-- Icono Javascript-->
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="assets/img/js-brands-solid.svg" alt="Javascript" class="iconoSkill"></a>
+                </div>
+                <div class="col-4 col-md-3"> <!-- Icono Bootstrap-->
+                    <a href="https://getbootstrap.com/" target="_blank"><img src="assets/img/bootstrap-brands-solid.svg" alt="Bootstrap" class="iconoSkill"></a>
+                </div>
+                <div class="col-4 col-md-3"> <!-- Icono CSS-->
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><img src="assets/img/css3-alt-brands-solid.svg" alt="CSS" class="iconoSkill"></a>
+                </div>
+                <div class="col-4 col-md-3"> <!-- Icono Jquery-->
+                    <a href="https://jquery.com/" target="_blank"><img src="assets/img/jquery.svg" alt="Jquery" class="iconoSkill"></a>
+                </div>
+                <div class="col-4 col-md-4"> <!-- Icono SQL-->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><img src="assets/img/database-solid.svg" alt="SQL" class="iconoSkill"></a> <!-- no sabia que web poner xd -->
+                </div>
+                <div class="col-4 col-md-4"> <!-- Icono NodeJs-->
+                    <a href="https://nodejs.org/en" target="_blank"><img src="assets/img/node-js-brands-solid.svg" alt="Nodejs" class="iconoSkill"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="border-top footer d-flex text-center"> <!-- Footer con links a sociale -->
+        <div class="row w-100">
+            <div class="col-12"> <h2>Look at my socials!</h2>
+            </div>
+            <div class="col-6"> 
+               <a href="https://github.com/IanCatalan" target="_blank"><img src="assets/img/square-github-brands-solid.svg" alt="Github" class="iconoFooter" ></a>
+            </div>
+            <div class="col-6"> 
+               <a href="https://www.instagram.com/ursuscorvus/" target="_blank"><img src="assets/img/instagram-brands-solid.svg" alt="Instagram" class="iconoFooter"></a>
+            </div>
+            <div class="w-100 my-2" ></div>
+            <!-- Formulario contacto -->
+            <div class="col-12" id="contact"> 
+                <form action="https://formsubmit.co/iancatalan07@gmail.com" method="POST" class="text-center">
+                    <input class="formulario text-center" type="text" name="name" required placeholder="Tell me your opinion!">
+                    <input class="formulario text-center" type="email" name="email" required placeholder="yourmail@mail.com">
+                    <button class="btn border-primary-subtle btn-sm botonsend" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/2e40ff29cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

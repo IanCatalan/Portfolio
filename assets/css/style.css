@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+*{
+    font-family: "Cardo", sans-serif;
+    padding: 0%;
+    margin: 0%;
+    outline: none;
+}
+:root {
+    --morado-rgb: 153, 20, 193; /* Valores RGB para el color morado */
+    --morado-alpha: 0.5; /* Opacidad en porcentaje*/
+  }
+.customColorDeFondo {
+    background-color: rgba(var(--morado-rgb), var(--morado-alpha));
+  }
+.containerGeneral{
+    margin-top: 100px;
+}
+.icono{
+    height: 40px;
+    width: 40px;
+}
+.containerProyectos{
+    margin-top: 50px;
+}
+.imagenProyecto{
+    height: 100px;
+    width: 1000px;
+}
+.containerSkills{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.iconoSkill{
+    height: 80px;
+    width: 80px;
+}
+.footer{
+    margin-top: auto;
+}
+.iconoFooter{
+    height: 50px;
+    width: 50px;
+}
