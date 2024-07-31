@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body data-bs-theme="light">
-        <nav class="navbar navbar-expand-md border-bottom text-center fixed-top "> <!-- barra de navegación -->
+        <nav class="navbar navbar-expand-md border-bottom text-center fixed-top "> <!-- barra de navegación, me falta hacerla solida-->
           <div class="container-fluid ">
             <a class="navbar-brand" href="#">Ian.Dev</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,8 @@
                 <div class="w-100 my-5"></div> <!-- Separación entre columnas -->
                 <div class="col-12 text-start"> <!-- Texto principal-->
                     <h1 class="mt-3">Ian Catalán Leiva</h1>
-                    <p class="">I'm a full-stack developer with a strong background in science, currently blablabla</p>
+                    <p class="">I'm currently training to become a Full Stack Developer. Over the past few months, I've been diving into both front-end and back-end technologies, like HTML, CSS, and JavaScript. I also have a degree in Biochemistry, which was an interesting journey, though it's not my main passion.In my free time, I love playing video games.
+                    </p>
                 </div>
             </div>
         </div>
@@ -70,7 +71,7 @@
     </div>
     </div>
     <div class="container containerProyectos" id="proyects"> <!-- Container Sección Proyectos -->
-        <div class="row "> <!-- Sección proyectos -->
+        <div class="row "> <!-- Sección proyectos Ningún proyecto funcional, estamos trabajando para usted -->
             <div class="col-12 col-md-6 "> <!-- Proyecto 1 -->
                 <div class="card border-0">
                     <div class="card-body text-center customColorDeFondo">
@@ -97,29 +98,29 @@
     <div class="container border containerSkills customColorDeFondo" id="skills"> <!-- Container Sección Skills -->
         <div class="row d-flex align-items-center"> <!-- Sección Skills -->
             <div class="col col-2 col-md-1"> <!-- Icono-->
-                <img src="assets/img/toolbox-solid.svg" alt="Caja-herramientas" class="icono">
+                <img src="assets/img/toolbox-solid.svg" alt="Caja-herramientas" class="icono iconoCaja">
             </div>
-            <div class="col-6 col-md-8 mb-4"> <!-- Titulo -->
-                <h5 class="mt-5 text-start">MyTools</h5>
+            <div class="col-6 col-md-8 text-start tools"> <!-- Titulo -->
+                <h5 class="col-6 col-md-8 mt-5">MyTools</h5>
             </div>
             <div class="row text-end"> <!-- Gradilla iconosSkills -->
                 <div class="col-4 col-md-3"> <!-- Icono Javascript-->
-                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="assets/img/js-brands-solid.svg" alt="Javascript" class="iconoSkill"></a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript"><img src="assets/img/js-brands-solid.svg" alt="Javascript" class="iconoSkill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="JavaScript"></a>
                 </div>
                 <div class="col-4 col-md-3"> <!-- Icono Bootstrap-->
-                    <a href="https://getbootstrap.com/" target="_blank"><img src="assets/img/bootstrap-brands-solid.svg" alt="Bootstrap" class="iconoSkill"></a>
+                    <a href="https://getbootstrap.com/" target="_blank"><img src="assets/img/bootstrap-brands-solid.svg" alt="Bootstrap" class="iconoSkill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bootstrap" ></a>
                 </div>
                 <div class="col-4 col-md-3"> <!-- Icono CSS-->
-                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><img src="assets/img/css3-alt-brands-solid.svg" alt="CSS" class="iconoSkill"></a>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><img src="assets/img/css3-alt-brands-solid.svg" alt="CSS" class="iconoSkill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="CSS"></a>
                 </div>
                 <div class="col-4 col-md-3"> <!-- Icono Jquery-->
-                    <a href="https://jquery.com/" target="_blank"><img src="assets/img/jquery.svg" alt="Jquery" class="iconoSkill"></a>
+                    <a href="https://jquery.com/" target="_blank"><img src="assets/img/jquery.svg" alt="Jquery" class="iconoSkill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Jquery"></a>
                 </div>
                 <div class="col-4 col-md-4"> <!-- Icono SQL-->
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><img src="assets/img/database-solid.svg" alt="SQL" class="iconoSkill"></a> <!-- no sabia que web poner xd -->
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"><img src="assets/img/database-solid.svg" alt="SQL" class="iconoSkill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="SQL"></a> <!-- no sabia que web poner xd -->
                 </div>
                 <div class="col-4 col-md-4"> <!-- Icono NodeJs-->
-                    <a href="https://nodejs.org/en" target="_blank"><img src="assets/img/node-js-brands-solid.svg" alt="Nodejs" class="iconoSkill"></a>
+                    <a href="https://nodejs.org/en" target="_blank"><img src="assets/img/node-js-brands-solid.svg" alt="Nodejs" class="iconoSkill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="NodeJs"></a>
                 </div>
             </div>
         </div>
@@ -130,10 +131,10 @@
             <div class="col-12"> <h2>Look at my socials!</h2>
             </div>
             <div class="col-6"> 
-               <a href="https://github.com/IanCatalan" target="_blank"><img src="assets/img/square-github-brands-solid.svg" alt="Github" class="iconoFooter" ></a>
+               <a href="https://github.com/IanCatalan" target="_blank"><img src="assets/img/square-github-brands-solid.svg" alt="Github" class="iconoFooter" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Github" ></a>
             </div>
             <div class="col-6"> 
-               <a href="https://www.instagram.com/ursuscorvus/" target="_blank"><img src="assets/img/instagram-brands-solid.svg" alt="Instagram" class="iconoFooter"></a>
+               <a href="https://www.instagram.com/ursuscorvus/" target="_blank"><img src="assets/img/instagram-brands-solid.svg" alt="Instagram" class="iconoFooter" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram"></a>
             </div>
             <div class="w-100 my-2" ></div>
             <!-- Formulario contacto -->

@@ -10,4 +10,7 @@ function cambiarTema(){
         imagen.src  = "assets/img/dark_mode.svg"
     }
 }
+//Inicializar los tooltips
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 cambiarTema
