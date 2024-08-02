@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" color-scheme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body data-bs-theme="light">
+<body data-bs-theme="dark" >
         <nav class="navbar navbar-expand-md border-bottom text-center fixed-top "> <!-- barra de navegación, me falta hacerla solida-->
           <div class="container-fluid ">
             <a class="navbar-brand" href="#">Ian.Dev</a>
@@ -38,7 +38,7 @@
     <div class="container containerGeneral" id="presentation"> <!--Container general-->
     <div class="container text-center containerPrincipal"> <!-- Container sección principal -->
     <div class="row "> <!-- Seccion principal -->
-        <div class="col-sm-10 col-md-8 border customColorDeFondo"> <!-- Primera divisiónn-->
+        <div class="col-sm-10 col-md-8 rounded border fondo"> <!-- Primera divisiónn-->
             <div class="row d-flex align-items-center justify-content-start">
                 <div class="col col-2 col-md-1"> <!-- Icono-->
                     <img src="assets/img/id-badge-solid.svg" alt="Placa" class="icono">
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="col-sm-10 col-md-1 "></div><!-- Separación vertical -->
-        <div class="col-sm-10 col-md-3 border customColorDeFondo d-flex align-items-center justify-content-evenly"> <!--Segunda división Sección botones -->
+        <div class="col-sm-10 col-md-3 d-flex align-items-center justify-content-evenly fondo rounded border"> <!--Segunda división Sección botones -->
             <div class="row">
                 <div class="col-6 col-md-12"> <!-- Titulo "Theme"-->
                     <h3 class="mt-2">Theme</h3>
@@ -70,32 +70,35 @@
         </div>
     </div>
     </div>
-    <div class="container containerProyectos" id="proyects"> <!-- Container Sección Proyectos -->
-        <div class="row "> <!-- Sección proyectos Ningún proyecto funcional, estamos trabajando para usted -->
-            <div class="col-12 col-md-6 "> <!-- Proyecto 1 -->
-                <div class="card border-0">
-                    <div class="card-body text-center customColorDeFondo">
+    <div class="container containerProyectos px-0" id="proyects"> <!-- Container Sección Proyectos -->
+        <div class="row"> <!-- Sección proyectos Ningún proyecto funcional, estamos trabajando para usted -->
+            <div class="col-lg-4 col-md-6 "> <!-- Proyecto 1 -->
+                <div class="container text-center fondo rounded border">
                       <img src="assets/img/file-code-solid.svg" alt="FileCode" class="icono">
                       <h5 class="card-title">Proyect</h5>
                       <p class="card-text">Text RPG.</p>
                       <a href="#" class="btn" target="_blank" ><img src="assets/img/dice-d20-solid.svg" class="card-img-bottom imagenProyecto" alt="Dice-20-sides"></a>
-                
-                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 "> <!-- Proyecto 2 -->
-                <div class="card border-0">
-                    <div class="card-body text-center customColorDeFondo">
+            <div class="col-lg-4 col-md-6 "> <!-- Proyecto 2 -->
+                <div class="container text-center fondo rounded border">
                       <img src="assets/img/file-code-solid.svg" alt="FileCode" class="icono align-self-center">
                       <h5 class="card-title">Proyect</h5>
                       <p class="card-text">Bank Simulator.</p>
                       <a href="#" class="btn" target="_blank"><img src="assets/img/building-columns-solid.svg" class="card-img-bottom imagenProyecto" alt="..."></a>
-                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 "> <!-- Proyecto 3 -->
+                <div class="container text-center fondo rounded border">
+                      <img src="assets/img/file-code-solid.svg" alt="FileCode" class="icono align-self-center">
+                      <h5 class="card-title">Proyect</h5>
+                      <p class="card-text">Content creator website</p>
+                      <a href="#" class="btn" target="_blank"><img src="assets/img/building-columns-solid.svg" class="card-img-bottom imagenProyecto" alt="..."></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container border containerSkills customColorDeFondo" id="skills"> <!-- Container Sección Skills -->
+    <div class="container containerSkills fondo rounded border " id="skills"> <!-- Container Sección Skills -->
         <div class="row d-flex align-items-center"> <!-- Sección Skills -->
             <div class="col col-2 col-md-1"> <!-- Icono-->
                 <img src="assets/img/toolbox-solid.svg" alt="Caja-herramientas" class="icono iconoCaja">
