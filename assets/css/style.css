@@ -1,0 +1,44 @@
+/* Imagénes (perfil y bandera) */
+.hero-section img.rounded-circle {
+    border: 3px solid #fff;
+}
+
+/* Texto principal */
+.hero-section h1 {
+    font-weight: 700;
+    transition: color 0.3s, text-shadow 0.3s ease;
+}
+
+/* Hover en el título */
+.hero-section h1:hover {
+    color: #ffffff; 
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8); /* Efecto de luz*/
+}
+
+/* Botón de contacto */
+.hero-section .btn {
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    color: #fff;
+    border-color: #fff;
+}
+
+.hero-section .btn:hover {
+    color: #000; 
+}
+.hero-section .biC {
+    transition: color 0.2s ease, transform 0.s ease; 
+
+}
+.hero-section .biC:hover {
+    color: black; 
+}
+
+.hero-section .d-flex a {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.hero-section .d-flex a:hover {
+    transform: translateX(2px); 
+}
