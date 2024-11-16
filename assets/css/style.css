@@ -1,3 +1,11 @@
+/* NavBar */
+.nav-item:hover{
+    color: #ffffff; 
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Efecto de luz*/
+}
+
+
+
 /* Imagénes (perfil y bandera) */
 .hero-section img.rounded-circle {
     border: 3px solid #fff;
@@ -5,7 +13,6 @@
 
 /* Texto principal */
 .hero-section h1 {
-    font-weight: 700;
     transition: color 0.3s, text-shadow 0.3s ease;
 }
 
@@ -27,7 +34,7 @@
     color: #000; 
 }
 .hero-section .biC {
-    transition: color 0.2s ease, transform 0.s ease; 
+    transition: color 0.2s ease;
 
 }
 .hero-section .biC:hover {
@@ -41,4 +48,13 @@
 
 .hero-section .d-flex a:hover {
     transform: translateX(2px); 
+}
+
+/* Tecnologías */
+.tech-stack .highlight{
+    transition: text-shadow 0.3s ease;
+}
+
+.tech-stack .highlight:hover {
+    text-shadow: 0px 0px 10px rgb(255, 0, 0); /* Efecto de luz*/
 }
