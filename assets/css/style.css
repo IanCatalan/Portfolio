@@ -1,10 +1,15 @@
+/* Luz de fondo */
+body {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.01) 0,0001%, rgba(0, 0, 0, 1) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 /* NavBar */
 .nav-item:hover{
     color: #ffffff; 
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8); /* Efecto de luz*/
 }
-
-
 
 /* Imagénes (perfil y bandera) */
 .hero-section img.rounded-circle {
@@ -57,11 +62,4 @@
 
 .tech-stack .highlight:hover {
     text-shadow: 0px 0px 10px rgb(255, 0, 0); /* Efecto de luz*/
-}
-
-
-body {
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.01) 0,0001%, rgba(0, 0, 0, 1) 100%);
-    background-attachment: fixed; /* Fija el fondo para que no se mueva al hacer scroll */
-    background-size: cover; /* Ajusta el tamaño para que cubra toda la pantalla */
 }
