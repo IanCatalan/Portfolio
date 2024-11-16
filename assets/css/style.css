@@ -70,8 +70,8 @@
 }
 
 /* Proyectos */
-
-.card{
-    height: ;
-    width: ;
+.card-img-top {
+    height: 450px; 
+    object-fit:scale-down; 
+    width: 100%; 
 }
