@@ -7,8 +7,6 @@
     <script src="https://kit.fontawesome.com/2e40ff29cb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/js/main.js">
-    
     <title>Ian Catalán</title>
 </head>
 <body class="body" data-bs-theme="dark">
@@ -53,23 +51,23 @@
     
         <!-- Botón de contacto -->
         <div class="mb-4">
-            <button id="copy-email" class="btn btn-outline-light rounded-pill px-4 py-2 fs-5 d-flex align-items-center">
-              <i class="fa-regular fa-paper-plane"></i> Contact Me
+            <button id="copy-email" class="btn btn-outline-light rounded-pill px-4 py-2 fs-5 d-flex align-items-center" data-bs-toggle="popover" data-bs-content="Email copied to clipboard!" data-bs-trigger="manual">
+                <i class="fa-regular fa-paper-plane" ></i> Contact Me
             </button>
-            <span id="copy-message" style="display: none; margin-left: 10px; color: green;">Email copied to clipboard!</span>
+            <span id="copy-message" style="display: none; margin-left: 10px; color: whitesmoke;">Email copied to clipboard!</span>
           </div>
           
     
         <!-- Íconos -->
         <div class="d-flex gap-4">
             <a href="https://www.linkedin.com/in/ian-ignacio-catal%C3%A1n-leiva-57a615227/" target="_blank" class="text-white fs-3">
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin" data-bs-toggle="tooltip" title="Linkedin"></i>
             </a>
             <a href="https://github.com/IanCatalan" target="_blank" class="text-white fs-3">
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github" data-bs-toggle="tooltip" title="Github"></i>
             </a>
             <a href="assets/cv/cv-es.pdf" target="_blank" class="text-white fs-3 btn-download">
-                <i class="fa-solid fa-file-arrow-down"></i>
+                <i class="fa-solid fa-file-arrow-down" data-bs-toggle="tooltip" title="Download CV"></i>
             </a>
         </div>
     </main>
@@ -77,7 +75,7 @@
      <!-- Acerca de mi -->
     <hr>
     <div class="about-me container text-center my-5 border border-2 rounded-4 w-100" id="about-me">
-        <h2 class="mb-4 mt-2">About me</h2>
+        <h2 class="mb-4 mt-2 mb-4">About me</h2>
         <p class="fs-4">Im a developer passionate about learning and creating impactful solutions. With a strong ability to adapt, solve problems and acquire new skills, i enjoy      challenges that drive both professional and personal growth.
         <br>
         My focus is on building efficient and structured applications, combining technical expertise with core values like respect and honesty. 
@@ -89,7 +87,7 @@
      <!-- Tecnologías -->
     <div class="tech-stack container text-center my-5 border border-2 rounded-4">
         <h2 class="mb-4 mt-2">Tech Stack</h2>
-        <div class="row g-2">
+        <div class="row g-2 mb-4">
             <div class="col-6 col-md-4 col-lg-3 highlight">
                 <i class="fa-brands fa-js fs-1 d-block"></i>
                 <span class="fs-6">JavaScript</span>
@@ -131,7 +129,7 @@
     <!-- Proyectos -->
     <div class="container text-center my-5 border border-2 rounded-4 w-100" id="projects">
         <h2 class="mb-4 mt-2">Projects</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-4">
             <!-- Proyecto 1 -->
             <div class="col">
                 <div class="card h-100">
@@ -225,27 +223,25 @@
                 </div>
                  <div class="col-12 col-sm-2 text-start my-2">
                     <h5>Explore</h5>
-                    <a href="" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Home</a>
+                    <a href="#home" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Home</a>
                     <br>
-                    <a href="" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">About</a>
+                    <a href="#about-me" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">About</a>
                     <br>
-                    <a href="" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Projects</a>
+                    <a href="#projects" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Projects</a>
                 </div>
                 <div class="col-12 col-sm-2 text-start my-2">
                     <h5>Contact me!</h5>
-                    <a href="https://www.linkedin.com/in/ian-ignacio-catal%C3%A1n-leiva-57a615227/" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/ian-ignacio-catal%C3%A1n-leiva-57a615227/" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Linkedin</a>
                     <br>
-                    <a href="https://github.com/IanCatalan" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Github</a>
+                    <a href="https://github.com/IanCatalan" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Github</a>
                     <br>
-                    <a href="" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Email</a>
                 </div>
             </div>
         </div>
     </footer>
     
     
-
-
+    <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

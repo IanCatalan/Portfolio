@@ -1,17 +1,23 @@
 document.getElementById('copy-email').addEventListener('click', function () {
-    const email = "tuemail@ejemplo.com"; // Reemplaza con tu email
-  
-    // Copiar el email al portapapeles
+    const email = "iancatalan07@gmail.com"
+    
     navigator.clipboard.writeText(email)
       .then(() => {
-        const message = document.getElementById('copy-message');
-        message.style.display = 'inline'; // Muestra el mensaje
+        const popover = new bootstrap.Popover(this);
+        popover.show()
         setTimeout(() => {
-          message.style.display = 'none'; // Oculta el mensaje después de 2 segundos
-        }, 2000);
+          popover.hide()
+        }, 1500)
       })
       .catch(err => {
-        console.error('Error al copiar el email: ', err);
-      });
-  });
-  
+        console.error('Error al copiar el email:', err);
+      })
+  })
+
+document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  })
+
