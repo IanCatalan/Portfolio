@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2e40ff29cb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Ian Catalán</title>
 </head>
+
 <body class="body" data-bs-theme="dark">
     <!-- NavBar -->
+    <button class="btn btn-outline-light rounded-pill ms-3 my-2 px-2 fs-6 d-flex align-items-center" id="toggleLanguageButton"> <i class="fa-solid fa-skull-crossbones" data-bs-toggle="tooltip" title="Touch me!"></i></button>
     <div class="container d-flex mt-5 justify-content-center opacity-50 sticky-top">
         <nav class="navbar-expand border border-2 rounded-pill ">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item me-2">
-                    <a class="nav-link fs-5" href="#home">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link fs-5" href="#about-me">About</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link fs-5" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link fs-5" href="#contact">Contact</a>
-                </li>
-            </ul>
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <a class="nav-link fs-5" data-key="home" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5" data-key="about" href="#about-me">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5" data-key="projects" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5" data-key="contact" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
         </nav>
     </div>
-    <main class="hero-section text-center d-flex flex-column align-items-center justify-content-center vh-100" id="home">
+    <main class="hero-section text-center d-flex flex-column align-items-center justify-content-center vh-100"
+        id="home">
         <!-- Presentación -->
         <div class="d-flex align-items-center mb-4">
-            <img src="assets/media/img/profile.jpg" alt="Profile Picture" class="rounded-circle border" style="width: 120px; height: 120px;">
+            <img src="assets/media/img/profile.jpg" alt="Profile Picture" class="rounded-circle border"
+                style="width: 120px; height: 120px;">
             <div class="ms-3 text-start">
                 <h2 class="mb-1 fs-4 fw-bold text-white">Ian Catalán.</h2>
                 <p class="mb-0 text-secondary tremor">
-                    <img src="assets/media/img/chile.png" alt="Chile Flag" class="me-2" style="width: 20px;"> Made in Chile
+                    <img src="assets/media/img/chile.png" alt="Chile Flag" class="me-2" style="width: 20px;"> Made in
+                    Chile
                 </p>
             </div>
         </div>
-    
+
         <!-- Título principal -->
         <div class="mb-4">
-            <h1 class="display-1 fw-bold text-white">FULLSTACK <br>WEB<br> DEVELOPER</h1>
+            <h1 class="display-1 fw-bold text-white">
+                FULLSTACK <br>
+                WEB <br>
+                DEVELOPER
+            </h1>
         </div>
-    
+
         <!-- Botón de contacto -->
         <div class="mb-4">
-            <button id="copy-email" class="btn btn-outline-light rounded-pill px-4 py-2 fs-5 d-flex align-items-center" data-bs-toggle="popover" data-bs-content="Email copied to clipboard!" data-bs-trigger="manual">
-                <i class="fa-regular fa-paper-plane" ></i> Contact Me
+            <button id="copy-email" class="btn btn-outline-light rounded-pill px-4 py-2 fs-5 d-flex align-items-center"
+                data-bs-toggle="popover" data-bs-content="Email copied to clipboard!" data-bs-trigger="manual">
+                <i class="fa-regular fa-paper-plane"></i> <span data-key="contactMe">Contact Me</span>
             </button>
-            <span id="copy-message" style="display: none; margin-left: 10px; color: whitesmoke;">Email copied to clipboard!</span>
-          </div>
-          
-    
+            <span id="copy-message" style="display: none; margin-left: 10px; color: whitesmoke;">
+                <span data-key="emailCopied">Email copied to clipboard!</span>
+            </span>
+        </div>
+
         <!-- Íconos -->
         <div class="d-flex gap-4">
-            <a href="https://www.linkedin.com/in/ian-ignacio-catal%C3%A1n-leiva-57a615227/" target="_blank" class="text-white fs-3">
+            <a href="https://www.linkedin.com/in/ian-ignacio-catal%C3%A1n-leiva-57a615227/" target="_blank"
+                class="text-white fs-3">
                 <i class="fa-brands fa-linkedin" data-bs-toggle="tooltip" title="Linkedin"></i>
             </a>
             <a href="https://github.com/IanCatalan" target="_blank" class="text-white fs-3">
@@ -70,23 +83,29 @@
                 <i class="fa-solid fa-file-arrow-down" data-bs-toggle="tooltip" title="Download CV"></i>
             </a>
         </div>
+
+        </div>
     </main>
-    
-     <!-- Acerca de mi -->
+
+    <!-- Acerca de mi -->
     <hr>
     <div class="about-me container text-center my-5 border border-2 rounded-4 w-100" id="about-me">
         <h2 class="mb-4 mt-2 mb-4">About me</h2>
-        <p class="fs-4">Im a developer passionate about learning and creating impactful solutions. With a strong ability to adapt, solve problems and acquire new skills, i enjoy      challenges that drive both professional and personal growth.
-        <br>
-        My focus is on building efficient and structured applications, combining technical expertise with core values like respect and honesty. 
-        <br>
-        When i'm not coding, you'll find me reading, researching anytopic or gaming with friends.</p>
+        <p class="fs-4" data-key="aboutMe">I'm a developer passionate about learning and creating impactful solutions.
+            With a strong ability to adapt, solve problems and acquire new skills, I enjoy challenges that drive both
+            professional and personal growth.
+            <br>
+            My focus is on building efficient and structured applications, combining technical expertise with core
+            values like respect and honesty.
+            <br>
+            When I'm not coding, you'll find me reading, researching anytopic or gaming with friends.
+        </p>
     </div>
-    
-    
-     <!-- Tecnologías -->
+
+
+    <!-- Tecnologías -->
     <div class="tech-stack container text-center my-5 border border-2 rounded-4">
-        <h2 class="mb-4 mt-2">Tech Stack</h2>
+        <h2 class="mb-4 mt-2" data-key="tech">Tech Stack</h2>
         <div class="row g-2 mb-4">
             <div class="col-6 col-md-4 col-lg-3 highlight">
                 <i class="fa-brands fa-js fs-1 d-block"></i>
@@ -128,15 +147,16 @@
     </div>
     <!-- Proyectos -->
     <div class="container text-center my-5 border border-2 rounded-4 w-100" id="projects">
-        <h2 class="mb-4 mt-2">Projects</h2>
+        <h2 class="mb-4 mt-2" data-key="projects">Projects</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-4">
             <!-- Proyecto 1 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="assets/media/img/Portfolio.PNG" class="card-img-top border" alt="Portfolio image">
+                    <a href="https://iancatalan.github.io/Portfolio/" target="_blank"><img
+                            src="assets/media/img/Portfolio.PNG" class="card-img-top border" alt="Portfolio image"></a>
                     <div class="card-body">
-                        <h5 class="card-title">Portfolio</h5>
-                        <p class="card-text">Static website built to present myself.</p>
+                        <h5 class="card-title" data-key="title1">Portfolio</h5>
+                        <p class="card-text" data-key="description1">Responsive website built to present myself.</p>
                         <div class="row text-center">
                             <div class="col ">
                                 <i class="fa-brands fa-js fs-1"></i>
@@ -158,14 +178,15 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Proyecto 2 -->
             <div class="col">
                 <div class="card  h-100">
                     <img src="assets/media/img/Bootcamp.PNG" class="card-img-top border" alt="Bootcamp image">
                     <div class="card-body">
-                        <h5 class="card-title">Bootcamp</h5>
-                        <p class="card-text">API for the creation and administration of a bootcamp. Tested with Postman.</p>
+                        <h5 class="card-title" data-key="title2">Bootcamp</h5>
+                        <p class="card-text" data-key="description2">API for the creation and administration of a
+                            bootcamp. Tested with Postman.</p>
                         <div class="row text-center">
                             <div class="col ">
                                 <i class="fa-brands fa-node-js fs-1"></i>
@@ -183,14 +204,18 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Proyecto 3 -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="assets/media/img/outmindlogo.png" class="card-img-top border" alt="OutMind logo">
+                    <a href="https://outmind-f.vercel.app/" target="_blank"><img src="assets/media/img/outmindlogo.png"
+                            class="card-img-top border" alt="OutMind logo"></a>
                     <div class="card-body">
-                        <h5 class="card-title">OutMind</h5>
-                        <p class="card-text">Website for a content creation agency. (Work in progress)</p>
+                        <h5 class="card-title" data-key="title3">OutMind (WIP)</h5>
+                        <p class="card-text" data-key="description3">Website for a content creation agency to simplify
+                            customer communication through email, using Node.js and Nodemailer in the backend. On the
+                            frontend, I used React with Vanilla CSS to create a responsive design that looks great on
+                            any device</p>
                         <div class="row text-center">
                             <div class="col ">
                                 <i class="fa-brands fa-js fs-1"></i>
@@ -208,42 +233,58 @@
                                 <i class="fa-brands fa-react fs-1"></i>
                                 <span class="fs-6 d-block">React</span>
                             </div>
+                            <div class="col">
+                                <i class="fa-brands fa-node-js fs-1"></i>
+                                <span class="fs-6">Node.js</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <footer class="" id="contact">
+
+    <footer class="mb-2" id="contact">
         <div class="container border border-2 rounded-4 w-50">
             <div class="row">
                 <div class="col-12 col-sm-8 text-start my-2">
                     <h2 class="fs-1">Ian <br> Catalán.</h2>
                 </div>
-                 <div class="col-12 col-sm-2 text-start my-2">
-                    <h5>Explore</h5>
-                    <a href="#home" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Home</a>
+                <div class="col-12 col-sm-2 text-start my-2">
+                    <h5 data-key="explore">Explore</h5>
+                    <a href="#home"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        data-key="home">Home</a>
                     <br>
-                    <a href="#about-me" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">About</a>
+                    <a href="#about-me"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        data-key="about">About</a>
                     <br>
-                    <a href="#projects" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Projects</a>
+                    <a href="#projects"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        data-key="projects">Projects</a>
                 </div>
                 <div class="col-12 col-sm-2 text-start my-2">
-                    <h5>Contact me!</h5>
-                    <a href="https://www.linkedin.com/in/ian-ignacio-catal%C3%A1n-leiva-57a615227/" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Linkedin</a>
+                    <h5 data-key="contact">Contact</h5>
+                    <a href="https://www.linkedin.com/in/ian-ignacio-catal%C3%A1n-leiva-57a615227/" target="_blank"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Linkedin</a>
                     <br>
-                    <a href="https://github.com/IanCatalan" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Github</a>
+                    <a href="https://github.com/IanCatalan" target="_blank"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Github</a>
                     <br>
                 </div>
             </div>
         </div>
     </footer>
-    
-    
+
+    <script src="assets/js/translate.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
