@@ -5,6 +5,7 @@ const translations = {
     about: "About",
     projects: "Projects",
     contact: "Contact",
+    language: "Language",
     contactMe: "Contact Me",
     emailCopied: "Email copied to clipboard!",
     downloadCV: "Download CV",
@@ -18,7 +19,11 @@ const translations = {
       "API for the creation and administration of a bootcamp. Tested with Postman.",
     title3: "Outmind",
     description3:
-      "Website for a content creation agency to simplify customer communication through email, using Node.js and Nodemailer in the backend. On the frontend, I used React with Vanilla CSS to create a responsive design that looks great on any device",
+      "Website for a content creation agency to simplify customer communication through email, using Node.js and Nodemailer in the backend. On the frontend, I used React with Vanilla CSS to create a responsive design that looks great on any device. Work in progress",
+    title4:"Weather APP",
+    description4:"Simple website to check the weather in your area. Built with React and the OpenWeather API.",
+    title5:"Movies",
+    description5:"Simple website built using the TMDB API and React.",
     explore: "Explore",
   },
   es: {
@@ -26,6 +31,7 @@ const translations = {
     about: "Sobre mi",
     projects: "Proyectos",
     contact: "Contacto",
+    language: "Idioma",
     contactMe: "Contáctame",
     emailCopied: "¡Correo copiado al portapapeles!",
     downloadCV: "Descargar CV",
@@ -40,7 +46,12 @@ const translations = {
     title3: "Outmind",
     description3:
       "Sitio web para una agencia de creación de contenido, donde se utilizó Node.js y Nodemailer en el backend para permitir que los usuarios envíen correos directamente desde la aplicación web. En el frontend, utilicé React con CSS Vanilla para crear un diseño responsivo que se ve excelente en cualquier dispositivo.",
+    title4:"Aplicación del clima",
+    description4:"Sitio web simple para verificar el clima en tu área. Construido con React y la API de OpenWeather.",
+    title5:"Películas",
+    description5:"Sitio web simple, construido utilizando la API de TMDB y React.",
     explore: "Explorar",
+    
   },
 };
 
@@ -55,9 +66,8 @@ function changeLanguage(language) {
 document
   .getElementById("toggleLanguageButton")
   .addEventListener("click", () => {
-    const currentLanguage = document.documentElement.lang || "en"; 
-    const newLanguage = currentLanguage === "en" ? "es" : "en"; 
-    document.documentElement.lang = newLanguage; 
+    const currentLanguage = document.documentElement.lang || "en";
+    const newLanguage = currentLanguage === "en" ? "es" : "en";
+    document.documentElement.lang = newLanguage;
     changeLanguage(newLanguage);
-    
   });
