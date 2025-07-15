@@ -1,4 +1,4 @@
-# Sitio Web del Portafolio de Ian Catalán
+# Sitio Web del Portafolio de Ian Catalán (SIN USO, para revisar el actual favor de visitar https://ian-catalan.vercel.app/)
 
 Bienvenido al repositorio de mi sitio web personal. Este proyecto muestra mi trabajo como desarrollador web fullstack, con un diseño moderno y responsive construido con HTML, Bootstrap 5 y JavaScript. El sitio soporta contenido en múltiples idiomas (inglés y español), un tema oscuro y traducciones dinámicas.
 
